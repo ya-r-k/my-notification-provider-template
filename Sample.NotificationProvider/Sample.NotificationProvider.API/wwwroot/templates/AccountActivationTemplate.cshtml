@@ -1,0 +1,24 @@
+﻿@model Sample.NotificationProvider.Common.EmailModels.AccountActivationEmailModel
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+        <title>Account Activation</title>
+        <style>
+            html {
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Account Activation</h1>
+        <p>Dear @Model.Recipient.GivenName @Model.Recipient.FamilyName,</p>
+        <p>Thank you for signing up! To activate your account, please click on the following link:</p>
+        <p><a href="@Model.ActivationLink">@Model.ActivationLink</a></p>
+        <p>Please note that this activation link will expire on @Model.ExpirationDate.</p>
+        <p>If you have any questions or need assistance, please contact our support team at @Model.ContactInformation.</p>
+        <p>Best regards,</p>
+        <p>Your Company</p>
+    </body>
+</html>
