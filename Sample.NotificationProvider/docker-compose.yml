@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  sample-notificationprovider:
+    image: ${DOCKER_REGISTRY-}samplenotificationproviderapi
+    build:
+      context: .
+      dockerfile: Sample.NotificationProvider.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "5159:80"
+      - "7193:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+  mailu:
+    image: mailu/mailu:latest
+    restart: always
+    environment:
+      - DBPASS=mydatabasepassword
+      - FIRST_DOMAIN=example.com
+      - POSTMASTER_ADDRESS=postmaster@example.com
+    volumes:
+      - ../data:/data

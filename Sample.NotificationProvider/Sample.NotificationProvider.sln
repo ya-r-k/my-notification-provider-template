@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.API", "Sample.NotificationProvider.API\Sample.NotificationProvider.API.csproj", "{F672E19D-FF02-471B-B0C7-F3658EA8B210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.Common", "Sample.NotificationProvider.Common\Sample.NotificationProvider.Common.csproj", "{65969B67-D477-426F-9E86-95BE8849817F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.Di", "Sample.NotificationProvider.Di\Sample.NotificationProvider.Di.csproj", "{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.Bll", "Sample.NotificationProvider.Bll\Sample.NotificationProvider.Bll.csproj", "{56E1B270-AB0B-47CB-B026-AE501FB441C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D39B0CD5-1684-49BD-A7DA-DE484EA235D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A486B842-F3C6-4E1D-AB07-E247AA829088}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{BDDDB603-31F8-4A73-B19B-D85F8AE0CD70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project files", "Project files", "{583B93B2-3C11-4D8F-AD4C-1241D1AB4277}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.IntegrationTests", "Sample.NotificationProvider.IntegrationTests\Sample.NotificationProvider.IntegrationTests.csproj", "{F6575D1A-9652-46D2-B981-5FEFE7161EBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C681BC2E-90E7-40C9-BB12-A62F678D5DBE}"
+	ProjectSection(SolutionItems) = preProject
+		..\Scripts\docker-compose.launch.bat = ..\Scripts\docker-compose.launch.bat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.NotificationProvider.MailAccess", "Sample.NotificationProvider.MailAccess\Sample.NotificationProvider.MailAccess.csproj", "{2A037F1C-513A-442A-877A-C5EA31E4F42D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A883421F-9B8F-4FBF-A4B2-323FFD56545C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F672E19D-FF02-471B-B0C7-F3658EA8B210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F672E19D-FF02-471B-B0C7-F3658EA8B210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F672E19D-FF02-471B-B0C7-F3658EA8B210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F672E19D-FF02-471B-B0C7-F3658EA8B210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65969B67-D477-426F-9E86-95BE8849817F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65969B67-D477-426F-9E86-95BE8849817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65969B67-D477-426F-9E86-95BE8849817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65969B67-D477-426F-9E86-95BE8849817F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E1B270-AB0B-47CB-B026-AE501FB441C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E1B270-AB0B-47CB-B026-AE501FB441C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E1B270-AB0B-47CB-B026-AE501FB441C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E1B270-AB0B-47CB-B026-AE501FB441C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6575D1A-9652-46D2-B981-5FEFE7161EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6575D1A-9652-46D2-B981-5FEFE7161EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6575D1A-9652-46D2-B981-5FEFE7161EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6575D1A-9652-46D2-B981-5FEFE7161EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A037F1C-513A-442A-877A-C5EA31E4F42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A037F1C-513A-442A-877A-C5EA31E4F42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A037F1C-513A-442A-877A-C5EA31E4F42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A037F1C-513A-442A-877A-C5EA31E4F42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A883421F-9B8F-4FBF-A4B2-323FFD56545C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A883421F-9B8F-4FBF-A4B2-323FFD56545C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A883421F-9B8F-4FBF-A4B2-323FFD56545C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A883421F-9B8F-4FBF-A4B2-323FFD56545C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F672E19D-FF02-471B-B0C7-F3658EA8B210} = {D39B0CD5-1684-49BD-A7DA-DE484EA235D3}
+		{65969B67-D477-426F-9E86-95BE8849817F} = {D39B0CD5-1684-49BD-A7DA-DE484EA235D3}
+		{56BEF9D6-CDC1-4814-B736-D6919A2ED5C7} = {D39B0CD5-1684-49BD-A7DA-DE484EA235D3}
+		{56E1B270-AB0B-47CB-B026-AE501FB441C9} = {D39B0CD5-1684-49BD-A7DA-DE484EA235D3}
+		{F6575D1A-9652-46D2-B981-5FEFE7161EBE} = {A486B842-F3C6-4E1D-AB07-E247AA829088}
+		{C681BC2E-90E7-40C9-BB12-A62F678D5DBE} = {583B93B2-3C11-4D8F-AD4C-1241D1AB4277}
+		{2A037F1C-513A-442A-877A-C5EA31E4F42D} = {D39B0CD5-1684-49BD-A7DA-DE484EA235D3}
+		{A883421F-9B8F-4FBF-A4B2-323FFD56545C} = {BDDDB603-31F8-4A73-B19B-D85F8AE0CD70}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F320734-94C7-4732-B2F6-7DB266A86A42}
+	EndGlobalSection
+EndGlobal
